@@ -1,0 +1,107 @@
+.penta-logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    width: 105px;
+    .penta-logo-brand {
+        display: flex;
+        align-items: center;
+        .penta-logo-img {
+            position: relative;
+            width: 26px;
+            height: 24px;
+            .penta-logo-p {
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                object-fit: contain;
+                object-position: center;
+                image-rendering: optimizequality;
+            }
+            .penta-logo-y {
+                width: 12px;
+                height: 12px;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+                position: absolute;
+                left: 8px;
+                top: 10px;
+                animation: penta-animation 2s linear infinite;
+                transform-style: preserve-3d;
+                image-rendering: optimizequality;
+            }
+        }
+    }
+    .penta-logo-text {
+        font-weight: 500;
+        max-width: 82px;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-right: 5px;
+        font-size: 14 * 0.0625rem;
+        transform: scale(0.9) translateZ(0) translate3d(0,0,0) perspective(1px);
+        text-align: right;
+        transition: .6s cubic-bezier(0.77, 0, 0.175, 1) all;
+        display: flex;
+        line-height: 1!important;
+        will-change: max-width;
+    }
+    .penta-logo-brand {
+        strong {
+            font-weight: 500;
+            overflow: hidden;
+            font-size: 14 * 0.0625rem;
+            max-width: 0;
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 5px;
+            line-height: 1!important;
+            transform: scale(0.9) translateZ(0) translate3d(0,0,0) perspective(1px);
+            transition: .6s cubic-bezier(0.77, 0, 0.175, 1) all;
+            will-change: max-width;
+        }
+    }
+    &.b {
+        .penta-logo-text {
+            color: black;
+        }
+        .penta-logo-brand {
+            strong {
+                color: black;
+            }
+        }
+    }
+    &.w {
+        .penta-logo-text {
+            color: white;
+        }
+        .penta-logo-brand {
+            strong {
+                color: white;
+            }
+        }
+    }
+    &:hover {
+        .penta-logo-brand {
+            strong {
+                max-width: 60px!important;
+            }
+        }
+        .penta-logo-text {
+            opacity: 0!important;
+            max-width: 0!important;
+        }
+    }
+}
+
+@keyframes penta-animation {
+    from { transform: scale(0.85) rotateY(0deg) translateZ(0) translate3d(0,0,0) perspective(1px); }
+    to {transform: scale(0.85) rotateY(-360deg) translateZ(0) translate3d(0,0,0) perspective(1px); }
+}

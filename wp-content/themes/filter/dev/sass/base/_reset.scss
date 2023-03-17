@@ -1,0 +1,141 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline: unset!important;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none; 
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    font-family: theme('fontFamily.primary');
+    user-select: none;
+    background-color: theme('colors.bodyColor');
+    color: theme('colors.textColor');
+}
+
+*, *:focus, *:hover, *:active, *::before, *::after {
+    outline: unset!important;
+}
+
+input, form, table, select, textarea, button {
+    font-family: theme('fontFamily.primary'), sans-serif;
+    font-size: 16px;
+    outline: unset;
+    appearance: none;
+    @include reset-input;
+    @apply focus:ring-0 focus:ring-offset-0 focus:shadow-none;
+}
+
+footer, header, nav, section, main {
+    display: block;
+}
+
+a, a:hover, a:active, a:focus, a:visited {
+    text-decoration: none;
+}
+
+ol, ul, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    appearance: none;
+    border-radius: 0;
+}
+
+svg {
+    overflow: visible;
+    display: block;
+}
+
+.video-player {
+    --plyr-color-main: red;
+    --plyr-video-background: rgba(0, 0, 0, 1);
+    --plyr-tab-focus-color: --plyr-color-main;
+    --plyr-badge-background: #4a5464;
+    --plyr-badge-text-color: #ffffff;
+    --plyr-badge-border-radius: 2px;
+    --plyr-captions-background: rgba(0, 0, 0, 0.8);
+    --plyr-captions-text-color: #ffffff;
+    --plyr-control-icon-size: 18px;
+    --plyr-control-spacing: 10px;
+    --plyr-control-padding: --plyr-control-spacing * 0.7;
+    --plyr-control-radius: 3px;
+    --plyr-control-toggle-checked-background: --plyr-color-main;
+    --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    --plyr-video-control-color: #ffffff;
+    --plyr-video-control-color-hover: #ffffff;
+    --plyr-video-control-background-hover: --plyr-color-main;
+    --plyr-audio-controls-background: #ffffff;
+    --plyr-audio-control-color: #4a5464;
+    --plyr-audio-control-color-hover: #ffffff;
+    --plyr-audio-control-background-hover: --plyr-color-main;
+    --plyr-menu-background: rgba(255, 255, 255, 0.9);
+    --plyr-menu-color: #4a5464;
+    --plyr-menu-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    --plyr-menu-radius: 4px;
+    --plyr-menu-arrow-size: 6px;
+    --plyr-menu-item-arrow-color: #728197;
+    --plyr-menu-item-arrow-size: 4px;
+    --plyr-menu-border-color: #dcdfe5;
+    --plyr-menu-border-shadow-color: #ffffff;
+    --plyr-progress-loading-size: 25px;
+    --plyr-progress-loading-background: rgba(35, 40, 47, 0.6);
+    --plyr-video-progress-buffered-background: rgba(255, 255, 255, 0.25);
+    --plyr-audio-progress-buffered-background: rgba(193, 200, 209, 0.6);
+    --plyr-range-thumb-height: 13px;
+    --plyr-range-thumb-background: #ffffff;
+    --plyr-range-thumb-shadow: 0 1px 1px rgba(215, 26, 18, 0.15), 0 0 0 1px rgba(215, 26, 18, 0.2);
+    --plyr-range-thumb-active-shadow-width: 3px;
+    --plyr-range-track-height: 5px;
+    --plyr-range-fill-background: --plyr-color-main;
+    --plyr-video-range-track-background: --plyr-video-progress-buffered-background;
+    --plyr-video-range-thumb-active-shadow-color: rgba(255, 255, 255, 0.5);
+    --plyr-audio-range-track-background: --plyr-video-progress-buffered-background;
+    --plyr-audio-range-thumb-active-shadow-color: rgba(215, 26, 18, 0.1);
+    --plyr-tooltip-background: rgba(255, 255, 255, 0.9);
+    --plyr-tooltip-color: #4a5464;
+    --plyr-tooltip-padding: calc(var(--plyr-control-spacing) / 2);
+    --plyr-tooltip-arrow-size: 4px;
+    --plyr-tooltip-radius: 3px;
+    --plyr-tooltip-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    --plyr-font-family: $font-primary;
+    --plyr-font-size-base: 15px;
+    --plyr-font-size-small: 13px;
+    --plyr-font-size-large: 18px;
+    --plyr-font-size-xlarge: 21px;
+    --plyr-font-size-time: --plyr-font-size-small;
+    --plyr-font-size-menu: 	--plyr-font-size-small;
+    --plyr-font-size-badge: 9px;
+    --plyr-font-weight-regular: 400;
+    --plyr-font-weight-bold: 600;
+    --plyr-line-height: 1.7;
+    --plyr-font-smoothing: false;
+}

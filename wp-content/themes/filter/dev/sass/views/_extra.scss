@@ -1,0 +1,104 @@
+*, .scrollbar {
+    &::-webkit-scrollbar { width: 5px;height: 5px; }
+    &::-webkit-scrollbar-track { background-color: theme('colors.secondary'); }
+    &::-webkit-scrollbar-thumb { background-color: theme('colors.primary'); }
+}
+
+.scrollbar {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+.split-lines,
+.split-words,
+.split-chars {
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after {
+    border-color: theme('colors.primary')!important;
+}
+
+.hide-scrollbar { @include hide-scrollbar; }
+
+.carousel__button.is-close {
+    right: unset!important;
+    top: 0!important;
+    left: 50%;
+    background-color: transparent;
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 100%!important;
+    transition: .35s ease all;
+    transform: translateX(-50%) translateY(-50%)!important;
+    background-color: theme('colors.primary')!important;
+    svg {
+        filter: unset!important;
+        color: white!important;
+        stroke-width: 3!important;
+        transition: .6s cubic-bezier(0.22, 0.68, 0, 1.1);
+    }
+    &:hover {
+        background-color: theme('colors.primary')!important;
+        svg {
+            transform: rotate(-90deg);
+            color: theme('colors.primary')important;
+        }
+    }
+}
+
+.cookie-bar {
+    margin: 0 0 0 auto;
+    &.hide-cookie {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
+    .cookie-content {
+        .text-field .cookie-icon path {
+            fill: theme('colors.primary')
+        }
+        .button-field .accept:hover .icon {
+            transform: translateX(3px);
+        }
+    }
+}
+
+.animate-carousel {
+    .swiper-slide {
+        & > * {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.8);
+            transition: .6s cubic-bezier(.25,.75,.5,1.25);
+        }
+        &-visible {
+            & > * {
+                opacity: 1;
+                pointer-events: visible;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+#map {
+    [title] {
+        text-indent: -9999px;
+        overflow: visible !important;
+        opacity: 1;
+        visibility: visible;
+        .marker-text {
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover {
+            .marker-text {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

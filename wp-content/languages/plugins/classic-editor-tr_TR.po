@@ -1,0 +1,118 @@
+# Translation of Plugins - Classic Editor - Stable (latest release) in Turkish
+# This file is distributed under the same license as the Plugins - Classic Editor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-07 20:32:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: tr\n"
+"Project-Id-Version: Plugins - Classic Editor - Stable (latest release)\n"
+
+#: classic-editor.php:841
+msgctxt "Editor Name"
+msgid "Edit (classic editor)"
+msgstr "Düzenle (klasik düzenleyici)\t"
+
+#: classic-editor.php:834
+msgctxt "Editor Name"
+msgid "Edit (block editor)"
+msgstr "Düzenle (blok düzenleyici)"
+
+#: classic-editor.php:495
+msgid "Change settings"
+msgstr "Ayarları değiştir"
+
+#: classic-editor.php:482
+msgid "Default editor for all sites"
+msgstr "Tüm siteler için varsayılan düzenleyici"
+
+#: classic-editor.php:478
+msgid "Editor Settings"
+msgstr "Düzenleyici ayarları"
+
+#: classic-editor.php:462
+msgid "Default Editor"
+msgstr "Varsayılan düzenleyici"
+
+#: classic-editor.php:875
+msgctxt "Editor Name"
+msgid "block editor"
+msgstr "blok düzenleyici"
+
+#: classic-editor.php:872
+msgctxt "Editor Name"
+msgid "classic editor"
+msgstr "klasik düzenleyici"
+
+#. translators: %s: post title
+#: classic-editor.php:836
+msgid "Edit &#8220;%s&#8221; in the block editor"
+msgstr "&#8220;%s&#8221; öğesini blok düzenleyicide düzenle"
+
+#: classic-editor.php:671
+msgid "Switch to block editor"
+msgstr "Blok düzenleyiciye geç"
+
+#: classic-editor.php:700
+msgid "Switch to classic editor"
+msgstr "Klasik düzenleyiciye geç"
+
+#: classic-editor.php:499
+msgid "By default the block editor is replaced with the classic editor and users cannot switch editors."
+msgstr "Varsayılan olarak blok düzenleyici klasik düzenleyici ile değiştirilir ve kullanıcılar düzenleyiciler arasında geçiş yapamaz"
+
+#: classic-editor.php:498
+msgid "Allow site admins to change settings"
+msgstr "Yöneticilerin ayarları değiştirmesine izin ver"
+
+#: classic-editor.php:652
+msgid "Editor"
+msgstr "Düzenleyici"
+
+#: classic-editor.php:437
+msgid "No"
+msgstr "Hayır"
+
+#: classic-editor.php:433
+msgid "Yes"
+msgstr "Evet"
+
+#: classic-editor.php:360
+msgid "Allow users to switch editors"
+msgstr "Kullanıcıların düzenleyici seçmesine izin ver"
+
+#: classic-editor.php:359
+msgid "Default editor for all users"
+msgstr "Tüm kullanıcılar için varsayılan düzenleyici"
+
+#. Author URI of the plugin
+msgid "https://github.com/WordPress/classic-editor/"
+msgstr "https://github.com/WordPress/classic-editor/"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/classic-editor/"
+msgstr "https://wordpress.org/plugins/classic-editor/"
+
+#. Author of the plugin
+msgid "WordPress Contributors"
+msgstr "WordPress katılımcıları"
+
+#. Description of the plugin
+msgid "Enables the WordPress classic editor and the old-style Edit Post screen with TinyMCE, Meta Boxes, etc. Supports the older plugins that extend this screen."
+msgstr "Klasik WordPress düzenleyicisini ve eski stil yazı düzenleme ekran düzenini (TinyMCE, meta kutuları vb.) kullanılabilir kılar. Bu ekranı genişleten eski eklentileri destekler."
+
+#. Plugin Name of the plugin
+msgid "Classic Editor"
+msgstr "Klasik düzenleyici"
+
+#. translators: %s: post title
+#: classic-editor.php:843
+msgid "Edit &#8220;%s&#8221; in the classic editor"
+msgstr "&#8220;%s&#8221; öğesini klasik düzenleyicide düzenle"
+
+#: classic-editor.php:719
+msgid "Settings"
+msgstr "Ayarlar"
