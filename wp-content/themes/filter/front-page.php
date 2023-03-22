@@ -23,7 +23,6 @@
                         <?php endforeach; ?>
                     </select>
                 <?php endif; ?>
-
                 <?php $alts = get_terms([
                     'taxonomy' => 'blog_cat',
                     'hide_empty' => false
